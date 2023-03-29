@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Moovie search app</title>
+</head>
+<body class="font-Josefin">
+    <header class="flex flex-col lg:flex-row items-center justify-between p-5 bg-[url('/assets/rose-petals.png')] shadow-2xl">
+        <div>
+            <p class="text-4xl text-white font-bold">Movie<span class="text-yellow-400 text-xl">app</span></p>
+        </div>
+        <form id="form">
+            <input class="w-full border-white border-2 rounded-3xl font-bold outline-none mt-4 py-3 px-4 cursor-pointer bg-blue-900 text-white" type="text" placeholder="Search..." id="search">
+        </form>
+    </header>
+    <main class="bg-[url('/assets/rose-petals.png')] lg:px-20 xl:px-40">
+        <div class="genre-tags flex flex-wrap justify-center gap-2 lg:w-[70%] m-auto pt-10">
+        </div>
+        <h1 class="text-white text-center md:text-left font-bold text-3xl mt-5 md:my-5">Popular Movies</h1>
+        <div id="main" class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3  place-items-center pt-10 pb-20"> 
+        </div>
+        <div class="pagination text-white font-bold flex justify-center">
+            <div class="flex items-center gap-4 mb-10 bg-blue-900 px-4 py-2 rounded-full z-10">
+                <button class="previousBtn cursor-pointer px-4 py-2 hover:text-yellow-500">Previous</button>
+                <div class="currentPage bg-yellow-500 rounded-full text-xl w-10 h-10 p-2 text-center"></div>
+                <button class="nextBtn cursor-pointer px-4 py-2 hover:text-yellow-500">Next</button>
+            </div>
+        </div>
+    </main>
+    <div class="modalloader flex justify-center items-center h-full w-full absolute top-0 bg-gray-700  bg-opacity-90">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>                      
+    </div>
+    <footer>
+        <div class="bg-[url('/assets/rose-petals.png')] text-center py-20">
+            <p class="text-white font-bold py-5">© 2023 Movie app. All rights reserved. | 6060 Főút, Gyimesfelsőlok | www.movieapp.com
+            </p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
