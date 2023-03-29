@@ -7,8 +7,8 @@ module.exports = {
       'Josefin': ['Josefin','sans-serif'],
       },
       backgroundImage: {
-        'mainPhoto': "url('./assets/rose-petals.png')",
-        'movieCard': "url('./assets/sun-tornado.png')",
+        'mainPhoto': "url('/assets/rose-petals.png')",
+        'movieCard': "url('/assets/sun-tornado.png')",
       }
     },
   },
