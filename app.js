@@ -161,7 +161,7 @@ function setVoteColor() {
         if(num > 5) {
             rate.classList.add('text-yellow-500');
         } else if(num > 7) {
-            rate.classList.add('text-yellow-700');
+            rate.classList.add('text-lime-700');
         } else {
             rate.classList.add('text-red-500');
         }
@@ -222,9 +222,9 @@ function showMovies(data) {
                 <h3 title="${title}" class="movietitle text-sm text-gray-50 font-bold max-w-[60%]">${title}</h3>
                 <p class="bg-gray-700 p-2 text-sm lg:text-xl text-white rounded-md font-bold">IMdb: <span class="rate">${Math.floor(vote_average)}<span></p>
             </div>
-            <div class="movie-info p-4 flex justify-between items-center">
-                <h3 class="text-xl text-gray-50  font-bold"><span class="text-sm">Language: <span>${original_language}</h3>
-                <p class="date text-sm text-gray-50 rounded-md font-bold">${release_date}</p>
+            <div class="movie-info flex justify-between px-4 text-sm">
+                <p class="text-gray-50  font-bold"><span class="text-sm">Language: <span>${original_language}</p>
+                <span class="date text-gray-50 rounded-md font-bold">${release_date}</span>
             </div>
             <div class="overview absolute bottom-0 w-full rounded-br rounded-bl font-bold p-4 bg-gray-50 bg-opacity-70 duration-300 transform translate-y-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
                 ${overview}
