@@ -214,7 +214,7 @@ function showMovies(data) {
         //object destructuring
         const {title, vote_average, overview, backdrop_path, original_language, release_date} = movie;
         const movieEl = document.createElement('div');
-        movieEl.classList.add("bg-[url('/assets/rose-petals.png')]",'bg-blue-90','rounded-md', 'shadow-2xl', 'relative', 'm-5');
+        movieEl.classList.add("bg-[url('assets/rose-petals.png')]",'bg-blue-90','rounded-md', 'shadow-2xl', 'relative', 'm-5');
         movieEl.innerHTML =
         `<img class="rounded-tr rounded-tl w-[100%] cursor-pointer" src="${backdrop_path ? IMG_URL + backdrop_path : 'https://picsum.photos/350/197'}" alt="">
         <div class="group relative flex flex-col">

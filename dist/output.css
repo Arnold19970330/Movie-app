@@ -749,6 +749,14 @@ video {
   background-image: url('/assets/rose-petals.png');
 }
 
+.bg-\[url\(\'assets\/rose-petals\.png\'\)\] {
+  background-image: url('assets/rose-petals.png');
+}
+
+.bg-\[url\(\'\.\/assets\/rose-petals\.png\'\)\] {
+  background-image: url('./assets/rose-petals.png');
+}
+
 .p-2 {
   padding: 0.5rem;
 }
