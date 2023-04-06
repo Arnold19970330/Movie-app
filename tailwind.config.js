@@ -7,8 +7,8 @@ module.exports = {
       'Josefin': ['Josefin','sans-serif'],
       },
       backgroundImage: {
-        'mainPhoto': "url('/assets/rose-petals.png')",
-        'movieCard': "url('/assets/sun-tornado.png')",
+        'mainPhoto': "url('https://firebasestorage.googleapis.com/v0/b/moovieapp-504a1.appspot.com/o/images%2Fsun-tornado.png?alt=media&token=2090e531-d2ce-41a5-b2c7-4e3b11c99faf')",
+        'movieCard': "url('./assets/sun-tornado.png')",
       }
     },
   },
